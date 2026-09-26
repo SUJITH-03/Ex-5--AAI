@@ -53,7 +53,6 @@ for z in measurements:
     kf.update(np.array([z]))
     est_states.append(kf.x)
     
-plt.plot([s[0] for s in est_states],label="BY CLARISSA")
 plt.plot([s[0] for s in truestates],label="true")
 plt.plot([s[0] for s in est_states],label="Estimate")
 plt.legend()
